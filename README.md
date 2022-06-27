@@ -31,7 +31,7 @@
 
 ## About The Project
 
-This is a simple API with created by educational propouses
+This is a simple API with ExpressJs created by educational propouses
 
 
 ## Getting Started
