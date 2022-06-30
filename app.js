@@ -20,8 +20,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                // url: `http://localhost:${config.port}`
-                url: "http://express-api-production-0d8b.up.railway.app"
+                url: `http://localhost`
             }
         ]
     },
