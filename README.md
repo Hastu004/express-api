@@ -63,7 +63,7 @@ $ yarn dev
 2. Clone the repository
 
 ```bash
-git clone https://github.com/@username/node-api
+git clone https://github.com/@username/express-api
 ```
 
 3. Create your Feature Branch
