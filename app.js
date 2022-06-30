@@ -20,7 +20,8 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: `http://localhost`
+                url: `http://localhost:${config.port}`,
+                description: 'Development server (under construction)',
             }
         ]
     },
