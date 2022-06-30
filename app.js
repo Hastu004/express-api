@@ -9,6 +9,8 @@ const swaggerUI = require("swagger-ui-express")
 const swaggerJsDoc = require("swagger-jsdoc")
 const path = require("path")
 
+const config = require('./config')
+
 const swaggerSpec = {
     definition: {
         openapi: "3.0.0",
@@ -18,7 +20,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "http://localhost:3000"
+                url: `http://localhost:${config.port}`
             }
         ]
     },
