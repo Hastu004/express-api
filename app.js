@@ -18,7 +18,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "http://express-api-production-0d8b.up.railway.app"
+                url: "https://localhost"
             }
         ]
     },
