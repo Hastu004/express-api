@@ -4,6 +4,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const api = require('./routes/index')
+const cors = require("cors");
 
 const swaggerUI = require("swagger-ui-express")
 const swaggerJsDoc = require("swagger-jsdoc")
@@ -27,7 +28,7 @@ const swaggerSpec = {
     },
     apis: [`${path.join(__dirname, "./routes/*.js")}`]
 }
-
+app.use(cors({ origin: `http://localhost:${config.port}`, credentials: true }));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/api', api)
