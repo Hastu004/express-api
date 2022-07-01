@@ -21,14 +21,14 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: `http://https://express-api-production-0d8b.up.railway.app:${config.port}`,
+                url: `https://express-api-production-0d8b.up.railway.app:${config.port}`,
                 description: 'Development server (under construction)',
             }
         ]
     },
     apis: [`${path.join(__dirname, "./routes/*.js")}`]
 }
-app.use(cors({ origin: `http://https://express-api-production-0d8b.up.railway.app:${config.port}`, credentials: true }));
+app.use(cors({ origin: `https://express-api-production-0d8b.up.railway.app:${config.port}`, credentials: true }));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/api', api)
