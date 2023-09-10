@@ -6,7 +6,6 @@
 
 <div align="center">
 
-![](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)
 ![](https://img.shields.io/badge/Maintained%3F-No-brightgreen.svg)
 
 </div>
